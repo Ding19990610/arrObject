@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 回调函数:将一个函数,作为参数,传给另一个函数中
+        // callBack 形参
+        function foo(callBack){
+            console.log("foo")
+            console.log(callBack);
+            callBack(); //回调函数  执行参数
+            // bar()    //直接调用另一个函数
+        }
+        // 定义的函数
+        var bar = function(){
+            console.log("我是回调函数");
+        }
+        // 如果想让bar 函数执行 在foo 函数中执行的方式:
+        foo(bar)  //函数bar 作 参数 传到foo里
+        
+        var a = "1";
+        var b = "1";
+        // a 和 b 不一样, 是两个变量
+    </script>
+</body>
+</html>

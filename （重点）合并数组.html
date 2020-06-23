@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2]
+        var arr1 = [3,4]
+        var arr2 = ["3","4"]
+
+        // 合并数组  优化方式：
+        arr = arr.concat(arr1)
+        arr = arr.concat(arr2)
+        console.log(arr)
+
+        // reverse() 颠倒数组
+        var reverseStr = arr.reverse();
+        console.log(reverseStr)
+
+        // slice 截取数组片段，并返回
+        // 参数1:开始的索引
+        // 参数2:到哪个索引值结束，包含开始的索引，不包含结束的索引
+        var arr2 = [1,2,"aa",3,4,5,6,7,8];
+        var res3 = arr2.slice(3,5);
+        console.log(res3)
+    </script>
+    
+</body>
+</html>

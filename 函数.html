@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function foo(a){
+            // a(bar);
+
+            console.log(a)
+            // return 函数返回值
+            // 1、可以将函数方法体运算的结果,返回给函数外部，变量就可以接收函数运行结果
+            // 2、return 以下的代码 都不执行，作用结束语句
+            // 3、返回值可以为js任意类型
+            return 12;
+            console.log("嘻嘻嘻")
+        }
+        // 如果foo没有返回值，那么res = undefined
+        // 如果foo有返回值, 返回return的内容
+        // var res = foo(function(){
+        //     console.log("嘻嘻嘻")
+        // });
+        var res = foo("xx");
+        console.log(res);
+        
+        // 声明函数的一种方法
+        var bar = function(){
+            console.log("xxx")
+        }
+        bar();
+        // 闭包
+        // function bar(){
+        //     return function(){}
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var arr = [1,2,3,4,5,6,7]
+        console.log(arr)
+        // splice(index,length;value1,value2...)
+        // 参数1:从第几个索引值开始
+        // 参数2:删除元素的长度
+        // 参数3:替换的元素
+        arr.splice(2,3,"你好啊","嘻嘻嘻")
+        console.log(arr)
+        // 清空数组  arr.splice(0)
+        // splice----->>>  一个参数: 表示从第几个索引值开始,删除后面所有元素
+        // ------>>两参数: 表示从第几个索引值开始,删除后面指定长度的元素
+        // ------>>三参数:表示从第几个索引值开始,删除后面指定长度的元素,并替换成其他的元素
+        arr.splice(0)
+        console.log(arr)
+    </script>
+</body>
+</html>

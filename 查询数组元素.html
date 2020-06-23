@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 如何判断某个数组中  是否含有 某个元素 -->
+    <script>
+        var arr = ["222","gg","丁",22,true];
+
+        // 方式1: 遍历数组 if判断
+        // for(var i = 0 ; i < arr.length ; i++){
+        //     if(arr[i] == "丁"){
+        //         alert("找到了");
+        //         break;
+        //     }
+        // }
+
+        // 方式2:indexOf()  返回指定元素的索引值
+                        // -1:数组中没有此元素
+                        // 其他值:数组中有此元素
+        
+        var res = arr.indexOf("丁");
+        if(res == -1){
+            alert("没找到");
+            
+        }else{
+            alert("找到了");
+            return;
+        }
+    </script>
+</body>
+</html>

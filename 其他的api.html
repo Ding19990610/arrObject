@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 反常规思路  !import
+        var arr = [1,2,3,4];
+        var arr1 = ["2","嘻嘻嘻"]
+        var  res = ["d","ddd"]  ;
+        // concat():合并数组,并返回合并后的数组
+
+        // 把arr  arr1 res 合并到arr
+        //注意:  arr数组长度变化了,是三个合并的数组的长度之和
+        arr = arr.concat(arr1);
+        arr = arr.concat(res)
+        
+        console.log(arr);
+    </script>
+</body>
+</html>

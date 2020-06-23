@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=["1",12];
+
+        // 通过构造函数的方式创建数组
+        var arr1 = new Array("1",12)
+        console.log(arr1);
+
+        // 给数组添加元素
+        // 方式1：末尾添加
+        arr1[arr1.length] = "嘻嘻嘻" 
+        arr1[arr1.length] = "哈哈哈"
+        // 方式2：
+        // push():从数组的末尾添加数据，参数为被添加的元素
+        arr1.push("api从末尾添加")
+
+        // 方式3：
+        arr1.unshift("从头无限加");
+        console.log(arr1);
+    </script>
+</body>
+</html>
